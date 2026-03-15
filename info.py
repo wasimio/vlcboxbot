@@ -15,27 +15,27 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '15396205'))
 API_HASH = environ.get('API_HASH', '6b43ca35c89ae9d387f672b09593d47e')
-BOT_TOKEN = environ.get('BOT_TOKEN', '8787618035:AAHtzS-6khGwhLndTKqqn7eG_7hxZfGa3r4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8532012562:AAEzLzUM_3gzmThRtr7UXASpuFX0YgFwPrs')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1315069250').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/rickakhtar")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003754040982'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002058229318').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+VK0FJwgy_QE3ZDI1')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002058229318 -1002578558944 ').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vlcbotuser:1PWWVgVFaS26i11x@vlcbot.nhjqrqf.mongodb.net/?appName=vlcbotappName=vlcboxbot")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003762935940'))
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/f80b8ab2294f22cdf0376-b0bb8edfb0975682b3.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/bb6c7cd3b95cf78066366-429b1c24814ebc4cb4.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002031180571'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1003840418850'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1003814069383'))
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1003895307560'))
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/vlcbox")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "5bb6e402dd86fb8774690a5f4a65d2a2c0c04877")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'shortslink.in')
@@ -52,13 +52,13 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1002824317499')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002385908762')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1003880007508'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002385908762')
+request_channel = environ.get('REQUEST_CHANNEL', '-1003793464034')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1003761154757'))
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002385908762'))
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002824317499'))
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
